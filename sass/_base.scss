@@ -40,5 +40,5 @@ body {
     [sidebar-start] 8rem [sidebar-end main-start] minmax(10rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end]
-    minmax(min-content, 1fr) [main-end];
+    minmax(10rem, 1fr) [main-end];
 }

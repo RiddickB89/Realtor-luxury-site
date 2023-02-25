@@ -13,7 +13,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 2rem 4rem;
+    gap: 1.5rem 2.5rem;
   }
 
   &__icon {
@@ -25,6 +25,6 @@
   }
 
   &__paragraph {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
