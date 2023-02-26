@@ -14,23 +14,22 @@
     color: $color-grey-light-1;
     cursor: pointer;
 
-    &::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: $color-grey-light-1;
-      position: absolute;
-      top: -1rem;
-      left: 0;
-    }
-
+    &::after,
     &::before {
       content: "";
       width: 100%;
       height: 2px;
       background-color: $color-grey-light-1;
       position: absolute;
+    }
+
+    &::after {
       bottom: -1rem;
+      left: 0;
+    }
+
+    &::before {
+      top: -1rem;
       left: 0;
     }
   }

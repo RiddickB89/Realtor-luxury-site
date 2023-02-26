@@ -23,6 +23,13 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-family: "Nunito", sans-serif;
+  color: #f9f7f6;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 4.7rem; }
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -79,26 +86,59 @@ body {
     display: block;
     color: #f9f7f6;
     cursor: pointer; }
-    .sidebar__btn::after {
+    .sidebar__btn::after, .sidebar__btn::before {
       content: "";
       width: 100%;
       height: 2px;
       background-color: #f9f7f6;
-      position: absolute;
-      top: -1rem;
+      position: absolute; }
+    .sidebar__btn::after {
+      bottom: -1rem;
       left: 0; }
     .sidebar__btn::before {
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: #f9f7f6;
-      position: absolute;
-      bottom: -1rem;
+      top: -1rem;
       left: 0; }
 
 .header {
-  background-color: #b28451;
-  grid-column: main-start / col-end 6; }
+  background-image: linear-gradient(rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/house-4.jpeg);
+  background-size: cover;
+  background-position: center;
+  grid-column: main-start / col-end 6;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, min-content) 1fr repeat(2, min-content);
+  grid-template-columns: max-content;
+  justify-content: center;
+  padding: 8rem;
+  padding-top: 4rem; }
+  .header__logo {
+    height: 3rem;
+    justify-self: center; }
+  .header__btn {
+    justify-self: start;
+    align-self: start;
+    margin-top: 4rem; }
+  .header__paragraph {
+    color: #f9f7f6;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem; }
+    .header__paragraph::after, .header__paragraph::before {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: currentColor; }
+  .header__services {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center; }
+  .header__service {
+    height: 3rem;
+    filter: brightness(0.7); }
 
 .realtors {
   background-color: #101d2c;
@@ -210,16 +250,17 @@ body {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem; }
+    gap: 2rem;
+    padding: 3rem;
+    padding-bottom: 1rem; }
   .card__li {
-    padding: 2rem 1rem 0 1rem;
     display: flex;
     column-gap: 1rem; }
   .card__paragraph {
     font-size: 1.5rem;
     font-family: "Josefin Sans", sans-serif;
     line-height: 1;
-    align-self: center; }
+    align-self: end; }
   .card__icon {
     width: 2rem;
     height: 2rem;
