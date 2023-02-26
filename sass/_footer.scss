@@ -1,4 +1,33 @@
 .footer {
-  background-color: $color-grey-dark-2;
+  background-color: $color-secondary;
   grid-column: main-start / main-end;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 10rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &__list {
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-grey-light-1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__link:active,
+  &__link:hover {
+    color: $color-grey-light-2;
+  }
 }
