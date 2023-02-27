@@ -11,6 +11,7 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
   background-color: $color-grey-light-1;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
 
   &__figure {
     grid-column: 1 / -1;
@@ -31,7 +32,7 @@
     display: block;
     text-align: center;
     width: 80%;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     font-size: 1.5rem;
     border: none;
     background-color: $color-secondary;

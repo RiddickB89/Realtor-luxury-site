@@ -7,6 +7,12 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-big-tablet) {
+    grid-column: 1 / -1;
+    row-gap: 3rem;
+    padding: 5rem;
+  }
+
   &__heading {
     justify-self: center;
   }

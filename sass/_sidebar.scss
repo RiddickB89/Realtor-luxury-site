@@ -3,6 +3,13 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
 
+  @media only screen and (max-width: $bp-big-tablet) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    display: grid;
+    justify-content: end;
+  }
+
   &__btn {
     width: 65%;
     height: 2px;
@@ -13,6 +20,11 @@
     display: block;
     color: $color-grey-light-1;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-big-tablet) {
+      width: 5rem;
+      margin-right: 2rem;
+    }
 
     &::after,
     &::before {
